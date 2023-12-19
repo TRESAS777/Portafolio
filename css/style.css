@@ -9,13 +9,89 @@
 body {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-direction: column;
-  /* height: 100vh;
-  width: 100vw; */
-
 }
 
+
+.zoom{
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.zoom:hover{
+  transform : scale(1.3);
+}
+ 
+#nombre  {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px 3px mediumspringgreen;
+  transition: .3s ease-in-out ;
+}
+
+#nombre:hover {
+  text-shadow: 0 0 5px rgb(157, 0, 255), 0 0 15px, 0 0 15px #0f0 ;
+}
+
+#nombre {
+  animation-duration: 3s;
+  animation-name: slidein;
+  
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .swiper {
+  width: 100vw;
+  height: 300px;
+} */
 
 
 
